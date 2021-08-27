@@ -10,6 +10,8 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "Not a valid number! 🚫";
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct guess! 🥳";
+    document.querySelector("body").style.backgroundColor = "#60b347";
+    document.querySelector(".number").style.width = "30rem";
   } else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent = "Too high 📈";
